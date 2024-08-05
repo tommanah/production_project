@@ -1,7 +1,7 @@
 import { Theme, useTheme } from 'app/providers';
 import React from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
-import * as cls from './ThemeSwitcher.module.scss';
+import cls from './ThemeSwitcher.module.scss';
 import LightIcon from 'shared/assets/icons/light.svg';
 import DarkIcon from 'shared/assets/icons/dark.svg';
 import { Button, ThemeButton } from 'shared/ui/Button/Button';
