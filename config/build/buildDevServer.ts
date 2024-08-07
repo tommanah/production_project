@@ -11,6 +11,7 @@ import * as webpack from 'webpack';
 import * as webpackDevServer from 'webpack-dev-server';
 import { BuildOptions } from "./types/config";
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 type Configuration = webpack.Configuration;
 type DevServerConfiguration = webpackDevServer.Configuration;
 
