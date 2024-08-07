@@ -12,6 +12,7 @@ const App = () => {
     return (
         <div className={classNames('app', {}, [theme])}>
             <Suspense fallback="">
+                cbsuchusdhu
                 <Navbar />
                 <div className='content-page'>
                     <Sidebar />
