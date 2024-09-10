@@ -1,8 +1,7 @@
 import globals from "globals";
 import pluginJs from "@eslint/js";
-import tseslint, { plugin } from "typescript-eslint";
+import tseslint from "typescript-eslint";
 import pluginReact from "eslint-plugin-react";
-import i18next from "i18next";
 import i18nextPlugin from 'eslint-plugin-i18next';
 
 
