@@ -33,6 +33,7 @@ export default [
       'import/no-extraneous-dependencies': 'off',
       'no-underscore-dangle': 'off',
       'i18next/no-literal-string': 'warn',
+      "react/prop-types": "off",
     }
   }
 ];
