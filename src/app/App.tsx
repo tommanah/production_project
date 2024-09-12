@@ -5,6 +5,7 @@ import { AppRouter } from './providers/router';
 import { Navbar } from 'widgets/Navbar';
 import { Sidebar } from 'widgets/Sidebar/ui/Sidebar/Sidebar';
 import { Suspense, useEffect } from 'react';
+import React from 'react';
 
 const App = () => {
 

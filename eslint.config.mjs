@@ -1,7 +1,7 @@
 import globals from "globals";
 import pluginJs from "@eslint/js";
 import tseslint from "typescript-eslint";
-import pluginReact from "eslint-plugin-react";
+import pluginReact, { rules } from "eslint-plugin-react";
 import i18nextPlugin from 'eslint-plugin-i18next';
 
 
@@ -32,8 +32,19 @@ export default [
       'import/extensions': 'off',
       'import/no-extraneous-dependencies': 'off',
       'no-underscore-dangle': 'off',
-      'i18next/no-literal-string': 'warn',
+      'i18next/no-literal-string': ['error', {markupOnly: true, "ignoreAttribute": ["data-testid"]}],
       "react/prop-types": "off",
-    }
+    },
+    globals: {
+      __IS_DEV__: true,
+    },
+    overrides: [
+      {
+        files: ['**/src/**/*.test.{ts,tsx}'],
+        rules: {
+          'i18next/no-literal-string': 'off',
+        }
+      }
+    ]
   }
 ];
